@@ -18,3 +18,13 @@ class SchoolListing(Listing):
     def __init__(self): 
         # Some stuff here
 ```
+
+### Individual Listing Components
+ - Type of listing (Manual, Zillow, CMU)
+ - Listing Price 
+ - Date listed 
+ - Duration of availability
+ - Lister's description
+ - Lister's information (requested by user)
+ - Address 
+ - House type (Apartment, house, etc.)
