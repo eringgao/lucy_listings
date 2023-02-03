@@ -1,0 +1,13 @@
+{
+    "access-control-allow-credentials": "true",
+    "access-control-allow-origin": "*",
+    "content-length": "20415",
+    "content-type": "application/json",
+    "date": "Fri, 03 Feb 2023 21:10:42 GMT",
+    "server": "RapidAPI-1.2.8",
+    "x-rapidapi-region": "AWS - us-east-1",
+    "x-rapidapi-version": "1.2.8",
+    "x-ratelimit-requests-limit": "30",
+    "x-ratelimit-requests-remaining": "29",
+    "x-ratelimit-requests-reset": "2419147"
+  }
