@@ -1,12 +1,54 @@
 <!DOCTYPE html>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <html lang="en">
   <head>
     <link rel="stylesheet" href="main.css">
     <meta charset="utf-8">
     <title>Lucy's Listings</title>
   </head>
+  <div class="topnav">
+    <a class="active" href="#home">Lucy's Listings</a>
+    <a href="#rent">Find a rental</a>
+    <a href="#post">Post a listing</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </div>
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1>Lucy's Listings</h1>
+      <h2>Find your campus home.</h2>
+      <div class="search-container">
+        <form action="/action_page.php">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+    </div>
+  </div>
   <body>
-    <h1>Lucy's Listings</h1>
-    <p>This is a web page.</p>
+    <!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="hero_image.jpg" alt="Mountains" style="width:100%">
+      <h3> For Sale </h3>
+      <p>Lorem ipsum..</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <img src="hero_image.jpg" alt="Lights" style="width:100%">
+      <h3> For Rent </h3>
+      <p>Lorem ipsum..</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <img src="hero_image.jpg" alt="Nature" style="width:100%">
+      <h3> Post a Listing </h3>
+      <p>Lorem ipsum..</p>
+    </div>
+  </div>
+</div>
   </body>
 </html>
