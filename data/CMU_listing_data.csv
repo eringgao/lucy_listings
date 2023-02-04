@@ -1,0 +1,72 @@
+On-Campus,For,Building,Room Type,"Bathroom Type (Community, shared, private)",Cost (per semester),Address,"A/C (No, Central, Window)"
+,Freshman,Boss House,Semi-Suite Double,Shared,"5,741","5126 Margaret Morrison Stree, Pittsburgh, PA 15213",Window
+,Freshman,Boss House,Semi-Suite Single,Shared,"6,665","5126 Margaret Morrison Stree, Pittsburgh, PA 15213",Window
+,Freshman,Clyde House,Studio Apartment Double,Shared,"6,055","624 Clyde St, Pittsburgh, PA 15213",No
+,Freshman,Clyde House,Studio Apartment triple,Shared,"6,055","624 Clyde St, Pittsburgh, PA 15213",No
+,Freshman,Donner House,Traditional Double,Community,"5,200","5115 Margaret Morrison St, Pittsburgh, PA 15213",No
+,Freshman,Donner House,Traditional Single,Community,"6,075","5115 Margaret Morrison St, Pittsburgh, PA 15213",No
+,Freshman,Donner House,Traditional Triple,Community,"4,659","5115 Margaret Morrison St, Pittsburgh, PA 15213",No
+,Upperclassman,Fairfax Apartments,Apartment Double,Shared,"6,640","4614 Fifth Ave, Pittsburgh, PA 15213",Central
+,Upperclassman,Fairfax Apartments,Apartment Single,Shared,"6,997","4614 Fifth Ave, Pittsburgh, PA 15213",Central
+,Upperclassman,Fairfax Apartments,Studio Apartment Double,Shared,"6,055","4614 Fifth Ave, Pittsburgh, PA 15213",Central
+,Upperclassman,Fifth Clyde House,Semi-Suite Double,Shared,"5,741","4735 Fifth Ave, Pittsburgh, PA 15213",Central
+,Upperclassman,Fifth Clyde House,Semi-Suite Double,Shared,"6,665","4735 Fifth Ave, Pittsburgh, PA 15213",Central
+,Upperclassman,Fifth Clyde House,Suite Double,Shared,"6,092","4735 Fifth Ave, Pittsburgh, PA 15213",Central
+,Upperclassman,Fifth Clyde House,Suite Single,Shared,"6,868","4735 Fifth Ave, Pittsburgh, PA 15213",Central
+,Upperclassman,Fifth Neville,Apartment Double,Shared,"6,640","4705 Fifth Ave, Pittsburgh, PA 15213",Window
+,Upperclassman,Fifth Neville,Apartment Single,Private,"6,997","4705 Fifth Ave, Pittsburgh, PA 15213",Window
+,Upperclassman,Fifth Neville,Studio Apartment,Shared,"6,055","4705 Fifth Ave, Pittsburgh, PA 15213",Window
+,Upperclassman,Forbes Beeler Apartments,Apartment Double,Shared,"6,640","Forbes Ave at, Beeler St, Pittsburgh, PA 15217",Central
+,Upperclassman,Forbes Beeler Apartments,Apartment Single,Shared,"6,997","Forbes Ave at, Beeler St, Pittsburgh, PA 15217",Central
+,Upperclassman,Greek Quad,Greek Double,Community,"5,200",Corner of Morewood Avenue and Forbes Avenue,Window
+,Upperclassman,Greek Quad,Greek Single,Community,"6,075",Corner of Morewood Avenue and Forbes Avenue,Window
+,Upperclassman,Greek Quad,Greek Large Double,Community,"5,517",Corner of Morewood Avenue and Forbes Avenue,Window
+,Upperclassman,Greek Quad,Greek Large Single,Community,"6,345",Corner of Morewood Avenue and Forbes Avenue,Window
+,Freshman,Henderson House,Semi-Suite Double,Shared,"5,741","528 Pressley St, Pittsburgh, PA 15212",Central
+,Freshman,Henderson House,Semi-Suite Single,Shared,"6,665","528 Pressley St, Pittsburgh, PA 15212",Central
+,Upperclassman,The Highlands Apartments,Apartment Double,Shared,"6,640","618 Clyde St, Pittsburgh, PA 15213",Window
+,Upperclassman,The Highlands Apartments,Apartment Single,Shared,"6,997","618 Clyde St, Pittsburgh, PA 15213",Window
+,Upperclassman,Margaret Morrison Apartments,Apartment Double,Shared,"6,640","Margaret Morrison Apartments, Pittsburgh, PA 15217",No
+,Upperclassman,Margaret Morrison Greeks,Greek Large Single,Community,"6,345",Margaret Morrison Corridor,No 
+,Upperclassman,Margaret Morrison Greeks,Greek Double,Community,"5,200",Margaret Morrison Corridor,No
+,Freshman,McGill House,Semi-Suite Double,Shared,"5,741","5180 Margaret Morrison St, Pittsburgh, PA 15217",Window
+,Freshman,McGill House,Semi-Suite Single,Shared,"6,665","5180 Margaret Morrison St, Pittsburgh, PA 15217",Window
+,Freshman,Morewood E-Tower,Traditional Double,Community,"5,200","1060 Forbes Avenue, Pittsburgh, PA 15213",No
+,Freshman,Morewood E-Tower,Traditional Single,Community,"6,075","1060 Forbes Avenue, Pittsburgh, PA 15213",No
+,Freshman,Morewood E-Tower,Semi-Suite Triple,Shared,"5,200","1060 Forbes Avenue, Pittsburgh, PA 15213",No
+,All,Morewood Gardens,Semi-Suite Double,Shared,"5,741","1060 Morewood Ave, Piitsburgh, PA 15213",Central
+,All,Morewood Gardens,Semi-Suite Single,Shared,"6,665","1060 Morewood Ave, Piitsburgh, PA 15213",Central
+,All,Morewood Gardens,Semi-Suite Triple,Shared,"5,200","1060 Morewood Ave, Piitsburgh, PA 15213",Central
+,Freshman,Mudge House,Semi-Suite Double,Shared,"5,741","1000 Morewood Ave, Pittsburgh, PA 15213",No 
+,Freshman,Mudge House,Semi-Suite Quad,Shared,"5,200","1000 Morewood Ave, Pittsburgh, PA 15213",No 
+,Freshman,Mudge House,Semi-Suite Single,Shared,"6,665","1000 Morewood Ave, Pittsburgh, PA 15213",No 
+,Freshman,Mudge House,Traditional Double,Community,"5,200","1000 Morewood Ave, Pittsburgh, PA 15213",No 
+,Freshman,Mudge House,Traditional Single,Community,"6,075","1000 Morewood Ave, Pittsburgh, PA 15213",No 
+,Freshman,Mudge House,Traditional Triple,Community,"4,659","1000 Morewood Ave, Pittsburgh, PA 15213",No 
+,Upperclassman,Neville Apartments,Apartment Double,Shared,"6,640","4705 Fifth Ave, Pittsburgh, PA 15213",Window
+,Upperclassman,Neville Apartments,Apartment Single,Shared,"6,997","4705 Fifth Ave, Pittsburgh, PA 15213",Window
+,Freshman,Residence on Fifth,Apartment Triple,Shared,"6,216","4700 Fifth Ave, Pittsburgh, PA 15213",Central
+,Freshman,Residence on Fifth,Studio Apartment Double,Shared,"6,055","4700 Fifth Ave, Pittsburgh, PA 15213",Central
+,Freshman,Residence on Fifth,Studio Apartment Triple,Shared,"6,055","4700 Fifth Ave, Pittsburgh, PA 15213",Central
+,Upperclassman,Resnik House,Semi-Suite Double,Shared,"5,741","5000 Forbes Ave, Pittsburgh, PA 15213",Central
+,Upperclassman,Resnik House,Suite Double,Shared,"6,092","5000 Forbes Ave, Pittsburgh, PA 15213",Central
+,Upperclassman,Resnik House,Suite Single,Shared,"6,868","5000 Forbes Ave, Pittsburgh, PA 15213",Central
+,Upperclassman,Roselawn House,Apartment Double,Shared,"6,640","1-16 Roselawn Terrace, Pittsburgh, PA 15217",No
+,Upperclassman,Roselawn House,Apartment Single,Shared,"6,997","1-16 Roselawn Terrace, Pittsburgh, PA 15217",No
+,Freshman,Scobell House,Traditional Double,Community,"5,200","5120 Margaret Morrision St, Pittsburgh, PA 15217",Window
+,Freshman,Scobell House,Traditional Double,Community,"6,075","5120 Margaret Morrision St, Pittsburgh, PA 15217",Window
+,Upperclassman,Shirley Apartments ,Apartment Double,Shared,"6,640","133 N Dithridge St, Pittsburgh, PA 15213",Window
+,Upperclassman,Shirley Apartments ,Apartment Double as Single,Shared,"7,486","133 N Dithridge St, Pittsburgh, PA 15213",Window
+,Upperclassman,Shirley Apartments ,Studio Apartment Single,Private,"7,251","133 N Dithridge St, Pittsburgh, PA 15213",Window
+,Upperclassman,Spirit House,Semi-Suite Double,Shared,"5,741","5115 Margaret Morrison St, Pittsburgh, PA 15213",No
+,Upperclassman,Spirit House,Semi-Suite Single,Shared,"6,665","5115 Margaret Morrison St, Pittsburgh, PA 15213",No
+,Upperclassman,Spirit House,Semi-Suite Triple,Shared,"5,200","5115 Margaret Morrison St, Pittsburgh, PA 15213",No
+,Freshman,Stever House,Traditional Double,Community,"5,200","1030 Morewood Ave, Pittsburgh, PA 15213",Window
+,Freshman,Welch House,Semi-Suite Double,Shared,"5,741","5110 Skibo Drive, Pittsburgh, PA 15213",No
+,Freshman,Welch House,Semi-Suite Single,Shared,"6,665","5110 Skibo Drive, Pittsburgh, PA 15213",No
+,Upperclassman,West Wing,Semi-Suite Double,Shared,"5,741","5119 Forbes Ave, Pittsburgh, PA 15213",Central
+,Upperclassman,West Wing,Semi-Suite Single,Shared,"6,665","5119 Forbes Ave, Pittsburgh, PA 15213",Central
+,Upperclassman,West Wing,Suite Double,Shared,"6,092","5119 Forbes Ave, Pittsburgh, PA 15213",Central
+,Upperclassman,West Wing,Suite Single,Shared,"6,868","5119 Forbes Ave, Pittsburgh, PA 15213",Central
+,Upperclassman,Woodlawn Apartments,Apartment Double,Shared,"6,640","5176 Margaret Morrison St, Pittsburgh, PA 15213",Window
+,Upperclassman,Woodlawn Apartments,Apartment Single,Shared,"6,997","5176 Margaret Morrison St, Pittsburgh, PA 15213",Window
