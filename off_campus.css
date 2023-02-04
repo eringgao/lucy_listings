@@ -1,0 +1,72 @@
+*{
+    margin: 5px;
+    padding: 4px;
+}
+
+label {
+    font-family: Lucida Grande;
+    font-size: 20px;
+    color: #66635B;
+
+}
+
+.rate {
+    float: left;
+    height: 50px;
+    padding: 10px 10px;
+    margin-top: 20px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+#respond {
+    margin-top: 60px;
+    width: 33%;
+  }
+  #respond h3{
+    position: relative;
+  }
+  #respond input[type='text'],
+  #respond input[type='email'],
+  #respond textarea {
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+  
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+  
+    line-height: 1.4em;
+}
