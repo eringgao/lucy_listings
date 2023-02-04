@@ -1,7 +1,5 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
-<body>
-
 <h2>Make a table based on the value of a drop down menu.</h2>
 
 <select id="myselect" onchange="change_myselect(this.value)">
@@ -13,23 +11,31 @@
 
 <p id="demo"></p>
 
+ -->
+
+
+<!DOCTYPE HTML>   
+<html>   
+  
+    <body style = "text-align:center;">   
+        
+        <p id = "json_to_html" style = "font-size: 15px; font-weight: bold;"> 
+        </p>
+
 <script src="cmu_data.js"></script>
-<script>
-function change_myselect(sel) {
-  const dbParam = JSON.stringify({table:sel,limit:20});
-  const xmlhttp = new XMLHttpRequest();
-  xmlhttp.onload = function() {
-    text = "<table border='1'>"
-    console.log("fuck");
-    for (x in cmu_data) {
-      text += "<tr><td>" + cmu_data[x].building_name + "</td></tr>";
-      console.log(cmu_data[x]);
+
+    <script>
+  console.log(cmu_data)
+    for (i = 0; i < cmu_data.length; i++) 
+    {
+        var current_obj = cmu_data[i];
+        var current_json = JSON.stringify(current_obj);
+        var json_to_html_tag = document.getElementById("json_to_html");
+        var parsed_obj = JSON.parse(current_json);
+        json_to_html_tag.innerHTML =  "Converting JSON to HTML <br><br>" + 
+                                "Name: " + parsed_obj.building_name + 
+                                "<br>Age: " + parsed_obj.price;
     }
-    text += "</table>"    
-    document.getElementById("demo").innerHTML = text;
-  }
-  xmlhttp.open("POST", "json_demo_html_table.php", true);
-  xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-  xmlhttp.send("x=" + dbParam);
-}
-</script>
+    </script>
+</body>
+</html>
