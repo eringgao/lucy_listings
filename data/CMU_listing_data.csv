@@ -1,6 +1,6 @@
-On-Campus,For,Building,Room Type,"Bathroom Type (Community, shared, private)",Cost (per semester),Address,"A/C (No, Central, Window)"
-,Freshman,Boss House,Semi-Suite Double,Shared,"5,741","5126 Margaret Morrison Stree, Pittsburgh, PA 15213",Window
-,Freshman,Boss House,Semi-Suite Single,Shared,"6,665","5126 Margaret Morrison Stree, Pittsburgh, PA 15213",Window
+On-Campus,For,Building,Room,Bathroom,Cost,Address,AC
+,Freshman,Boss House,Semi-Suite Double,Shared,"5,741","5126 Margaret Morrison St, Pittsburgh, PA 15213",Window
+,Freshman,Boss House,Semi-Suite Single,Shared,"6,665","5126 Margaret Morrison St, Pittsburgh, PA 15213",Window
 ,Freshman,Clyde House,Studio Apartment Double,Shared,"6,055","624 Clyde St, Pittsburgh, PA 15213",No
 ,Freshman,Clyde House,Studio Apartment triple,Shared,"6,055","624 Clyde St, Pittsburgh, PA 15213",No
 ,Freshman,Donner House,Traditional Double,Community,"5,200","5115 Margaret Morrison St, Pittsburgh, PA 15213",No
