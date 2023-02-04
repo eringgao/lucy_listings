@@ -1,0 +1,219 @@
+/* CSS reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 10;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1 {
+    color: white;
+    font-size: 70px;
+    font-family: Courier;
+    text-align: center;
+    margin: 10px;
+  }
+h2 {
+    color: white;
+    font-size: 50px;
+    font-family: Gill Sans;
+    text-align: center;
+    margin: 10px;
+  }
+
+h3 {
+  color: #4c5760;
+  font-size: 20px;
+  font-family: Lucida Grande;
+  text-align: center;
+  margin: 10px;
+}
+
+p {
+    color: #66635b;
+    font-size: 25px;
+    font-family: "Lucida Grande";
+    text-align: center;
+    margin: 20px;
+  }
+
+#one {
+    color: #66635b;
+    font-size: 12px;
+    font-family: "Lucida Grande";
+    text-align: center;
+    margin: 8px;
+   }
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 12px;
+    text-align: center;
+    background-color: #25aed3;
+  }
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #93a8ac;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  font-family: Monaco;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #d7ceb2;
+  color: white;
+}
+body, html {
+  height: 100%;
+  background-color: #93a8ac
+}
+/* The hero image */
+.hero-image{
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.381), rgba(0, 0, 0, 0.602)), url("hero_image.jpg");
+  opacity: 0.7;
+  /* Set a specific height */
+  height: 75%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 10px;
+}
+
+.hero-image .search-container input[type=text] {
+  float: center;
+  padding: 20px;
+  border: 2px;
+  margin-top: 30px;
+  margin-right: 16px;
+  font-size: 20px;
+}
+
+.hero-image .search-container button {
+  float: center;
+  padding: 6px 10px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+}
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  opacity: 1.0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Center website */
+
+.row {
+  margin: 8px;
+  padding: 5px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+
