@@ -1,7 +1,41 @@
 <!DOCTYPE html>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <html lang="en">
-<link rel="stylesheet" href="about.css">
+<link rel="stylesheet" href="main.css">
+
+<style>
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  </style>
+
 <div class="about-section">
     <head>
         <link rel="stylesheet" href="main.css">
@@ -16,7 +50,10 @@
         <a href="about_page.html">About</a>
       </div>
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> 7d9f7ee02b049c121dc9b9f381cb522f3749e73a
       <!-- <form id='formElem'>
         <label for="fname">First name:</label><br>
         <input type="text" id="fname" name="fname"><br>
@@ -48,46 +85,8 @@
       </form> -->
 
 
-      <!-- <script>
-        // get the form element from dom
-        const formElement = document.querySelector('form#forms')
-    
-        // convert the form to JSON
-        const getFormJSON = (form) => {
-          const data = new FormData(form);
-          return Array.from(data.keys()).reduce((result, key) => {
-            if (result[key]) {
-              result[key] = data.getAll(key)
-              return result
-            }
-            result[key] = data.get(key);
-            return result;
-          }, {});
-        };
-    
-        // handle the form submission event, prevent default form behaviour, check validity, convert form to JSON
-        const handler = (event) => {
-          event.preventDefault();
-          const valid = formElement.reportValidity();
-          if (valid) {
-            const result = getFormJSON(formElement);
-            // handle one, multiple or no files uploaded
-            const images = [result.images].flat().filter((file) => !!file.name)
-            // handle one, multiple or no languages selected
-            const languages = [result.languages || []].flat();
-            // convert the checkbox to a boolean
-            const isHappyReader = !!(result.isHappyReader && result.isHappyReader === 'on')
-    
-            // use spread function, but override the keys we've made changes to
-            const output = {
-              ...result,
-              images,
-              languages,
-              isHappyReader
-            }
-            console.log(output)
-          }
-        }
-    
-        formElement.addEventListener("submit", handler)
-      </script> -->
+<<<<<<< HEAD
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc0W1lPMhVGjFQk5mHoNxteS_xnzVZkjzzRI2Yo2Mxu5XFJyw/viewform?embedded=true" width="640" height="2079" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+=======
+     
+>>>>>>> 7d9f7ee02b049c121dc9b9f381cb522f3749e73a

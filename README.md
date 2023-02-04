@@ -28,3 +28,4 @@ class SchoolListing(Listing):
  - Lister's information (requested by user)
  - Address 
  - House type (Apartment, house, etc.)
+ 
