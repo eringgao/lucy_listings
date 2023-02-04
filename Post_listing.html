@@ -33,9 +33,30 @@
           <label for="contact-phone">Contact Phone Number</label>
           <input type="tel" id="phone" name="phone" placeholder="412-268-2000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"required>
 
-          <label for="contact-email">Contact Email Address</label>
-          <input type="email" id="email" name="email" placeholder="andrew@cmu.edu"required>
-          <input type="submit" value="Submit" name="submit-button" onclick="myFunction()">
+          <label for="contact-email">Contact Email </label>
+          <input type="email" id="email" name="email" placeholder="andrew@cmu.edu">
+
+          <label for="location address"> Address </label>
+          <input type="text" id="address" name="address" placeholder="123 main st.">
+
+          <label for="Beds"> Beds </label>
+          <input type="text" id="beds" name="beds" placeholder="3">
+
+          <label for="Bath"> Bath </label>
+          <input type="text" id="bath" name="baths" placeholder="3">
+          
+          <label for="Price"> Price </label>
+          <input type="text" id="price" name="price" placeholder="1200">
+
+          <label for="type">House Type </label>
+            <select name="houseType" id="house" multiple>
+              <option value="Apartment">Apartment</option>
+              <option value="Single Family">Single Family</option>
+              <option value="Town House">Town House</option>
+
+          
+
+          <input type="submit" value="Submit" name="submit-button" onclick="document.write('Success')">
           <!-- <button type="button" onclick="document.write('Success')">Submit</button> -->
 
 
