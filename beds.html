@@ -16,7 +16,6 @@
 
   <h2>Off campus housing options</h2>
 
-
   <select name="forma" onchange="change_myselect(this.value)">
     <option value="">Select a number of beds</option>
     <option value="1">1</option>
@@ -26,9 +25,8 @@
     <option value="5">5</option>
    </select>
 
-
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <p id="demo"></p>
-
   <body style = "text-align:center;">   
     <script type="text/javascript">
       $(function(){
@@ -38,10 +36,9 @@
     });
   </script>
 
+
+
   <script src="off_campus.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-
   <script type="text/javascript">
     function change_myselect(sel) {
       let text = "<table class='fold-table' class='center' border='2'> <thead>";
@@ -57,7 +54,7 @@
         var address_json = JSON.stringify(address_data);
         var parsed_addresses = JSON.parse(address_json);
         if (sel == (parsed_obj.beds)){
-          text += "<tr class='view' ><td>" + parsed_obj.beds + "</td><td>" + parsed_obj.bath + "</td><td>" + parsed_obj.price + "</td><td>" + parsed_obj.house_type + "</td><td>" + parsed_addresses.addr + ", " + parsed_addresses.city + ', ' + parsed_addresses.zipcode + "</td></tr>";
+          text += "<tr class='view' ><td>" + parsed_obj.beds + "</td><td>" + parsed_obj.bath + "</td><td> $" + parsed_obj.price + "</td><td>" + parsed_obj.house_type + "</td><td>" + parsed_addresses.addr + ", " + parsed_addresses.city + ', ' + parsed_addresses.zipcode + "</td></tr>";
           text += '<tr class="fold"> <td colspan="5"><div class="fold-content"> <h3> Walking distance: ' + parsed_obj.walk.toFixed(2) + '<br> Driving distance: ' + parsed_obj.drive.toFixed(2) + '</h3></div></td></tr>';
         }
     }
