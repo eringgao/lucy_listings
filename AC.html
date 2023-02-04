@@ -25,27 +25,24 @@
    </select>
 
 
-  <p id="demo"></p>
-
-  <body style = "text-align:center;">   
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script>
-      $(function(){
-    $(".fold-table tr.view").on("click", function(){
-      $(this).toggleClass("open").next(".fold").toggleClass("open");
-    });
-    });
-  </script>
-
-  <script src="cmu_data.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+   <p id="demo"></p>
+   <body style = "text-align:center;">   
+   <script src="cmu_data.js"></script>
+   <script>
+     $(function(){
+   $(".fold-table tr.view").on("click", function(){
+     $(this).toggleClass("open").next(".fold").toggleClass("open");
+   });
+   });
+   </script>
 
   <script>
     function change_myselect(sel) {
-    let text = "<table class='fold-table' class='center' border='2'> <thead>";
-    text += "<tr><td>" + "Grade" + "</td><td>" + "Building" + "</td><td>" + "Price" + "</td><td>" + "Room Type" + "</td><td>" + "Bathroom Type" + "</td><td>" + "A/C" + "</td><td>"+ "Address";
-    text += '<tbody>';
-    for (i = 0; i < cmu_data.length; i++)
+      let text = "<table class='fold-table' class='center' border='2'> <thead>";
+      text += "<tr><th>" + "Grade" + "</th><th>" + "Building" + "</th><th>" + "Price" + "</th><th>" + "Room Type" + "</th><th>" + "Bathroom Type" + "</th><th>" + "A/C" + "</th><th>"+ "Address </tr></thead>";
+      text += '<tbody>';
+      for (i = 0; i < cmu_data.length; i++)
     {
         var current_obj = cmu_data[i];
         var current_json = JSON.stringify(current_obj);
@@ -55,8 +52,8 @@
         var address_json = JSON.stringify(address_data);
         var parsed_addresses = JSON.parse(address_json);
         if (sel == (parsed_obj.ac)){
-          text += "<tr><td>" + parsed_obj.grade + "</td><td>" + parsed_obj.building_name + "</td><td>" + parsed_obj.price + "</td><td>" + parsed_obj.room_type + "</td><td>" + parsed_obj.bathroom_type + "</td><td>" + parsed_obj.ac + "</td><td>" + parsed_addresses.addr + ", " + parsed_addresses.city + ', ' + parsed_addresses.zipcode + "</td></tr>";
-          text += '<tr class="fold"> <td colspan="7"><div class="fold-content"><a href="https://www.google.com/search?q=' + parsed_obj.building_name + '+cmu&client=safari&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjArsjLzPz8AhVmMlkFHbzIAZ4Q_AUoAnoECAEQBA&biw=1694&bih=937&dpr=2"> See pictures' + '</a></div></td></tr>';
+          text += "<tr id= '" + parsed_obj.building_name + "' class='view' ><td>" + parsed_obj.grade + "</td><td>" + parsed_obj.building_name + "</td><td>" + parsed_obj.price + "</td><td>" + parsed_obj.room_type + "</td><td>" + parsed_obj.bathroom_type + "</td><td>" + parsed_obj.ac + "</td><td>" + parsed_addresses.addr + ", " + parsed_addresses.city + ', ' + parsed_addresses.zipcode + "</td></tr>";
+          text += '<tr class="fold"> <td colspan="7"><div class="fold-content"><a href="https://www.google.com/search?q=' + parsed_obj.building_name + '+cmu&client=safari&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjArsjLzPz8AhVmMlkFHbzIAZ4Q_AUoAnoECAEQBA&biw=1694&bih=937&dpr=2", Target="_blank"> See pictures' + '</a></div></td></tr>';  
         }
     }
     text += "</tbody></table>";
