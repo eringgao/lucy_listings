@@ -96,6 +96,28 @@ p {
     /* background-color: #8bafb9; */
   }
 
+.success-box {
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 12px;
+    text-align: center;
+    background-color: rgb(62, 92, 148);
+    margin-top: 30px;
+    margin-right: 70px;
+    margin-left: 70px;
+    padding: 20px;
+    /* background-color: #8bafb9; */
+  }
+
+  /* .success-box{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    margin-top: 30px;
+    margin-right: 70px;
+    margin-left: 70px;
+    padding: 20px;
+  } */
+
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #93a8ac;
