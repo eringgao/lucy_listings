@@ -30,9 +30,7 @@
   <p id="demo"></p>
 
   <body style = "text-align:center;">   
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script>
+    <script type="text/javascript">
       $(function(){
     $(".fold-table tr.view").on("click", function(){
       $(this).toggleClass("open").next(".fold").toggleClass("open");
@@ -41,8 +39,10 @@
   </script>
 
   <script src="off_campus.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-  <script>
+
+  <script type="text/javascript">
     function change_myselect(sel) {
       let text = "<table class='fold-table' class='center' border='2'> <thead>";
       text += "<tr><th>" + "Beds" + "</th><th>" + "Bath" + "</th><th>" + "Price" + "</th><th>" + "House Type" + "</th><th>" + "Address" + "</th>";
