@@ -19,9 +19,12 @@
 
   <select name="forma" onchange="location = this.value;">
     <option value="">Select a cateogry to organize by</option>
-    <option value="about_page.html">Building</option>
-    <option value="Contact.php">Contact</option>
-    <option value="Sitemap.php">Sitemap</option>
+    <option value="Grade.html">Grade</option>
+    <option value="Building.html">Building</option>
+    <option value="Price.html">Price</option>
+    <option value="Room_type.html">Room Type</option>
+    <option value="Bathroom.html">Bathroom Type</option>
+    <option value="AC.html">A/C</option>
    </select>
 
   <!-- <select id="myselect" class="primaryItems onchange="change_myselect(this.value)">
@@ -46,7 +49,7 @@
   });
   </script>
   <script>
-  let text = "<table class='fold-table' border='2'> <thead>";
+  let text = "<table class='fold-table' class='center' border='2'> <thead>";
   text += "<tr><th>" + "Grade" + "</th><th>" + "Building" + "</th><th>" + "Price" + "</th><th>" + "Room Type" + "</th><th>" + "Bathroom Type" + "</th><th>" + "A/C" + "</th><th>"+ "Address </tr></thead>";
   text += '<tbody>'
   for (i = 0; i < cmu_data.length; i++)
@@ -66,3 +69,5 @@
   </script>
 </body>
 </html>
+
+

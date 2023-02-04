@@ -18,29 +18,9 @@
 
 
   <select name="forma" onchange="change_myselect(this.value)">
-    <option value="">Select a building</option>
-    <option value="Boss House">Boss House</option>
-    <option value="Clyde House">Clyde House</option>
-    <option value="Donner House">Donner House	</option>
-    <option value="Fairfax Apartments">Fairfax Apartments</option>
-    <option value="Fifth Neville">Fifth Neville</option>
-    <option value="Greek Quad">Greek Quad</option>
-    <option value="Henderson House">Henderson House</option>
-    <option value="The Highlands Apartments">The Highlands Apartments</option>
-    <option value="Margaret Morrison Apartments">Margaret Morrison Apartments</option>
-    <option value="McGill House">McGill House</option>
-    <option value="Morewood E-Tower">Morewood E-Tower</option>
-    <option value="Morewood Gardens">Morewood Gardens</option>
-    <option value="Mudge House">Mudge House</option>
-    <option value="Neville Apartments">Neville Apartments</option>
-    <option value="Residence on Fifth">Residence on Fifth</option>
-    <option value="Resnik House">Resnik House</option>
-    <option value="Roselawn House">Roselawn House</option>
-    <option value="Spirit House">Spirit House</option>
-    <option value="Stever House">Stever House</option>
-    <option value="Welch House">Welch House</option>
-    <option value="West Wing">West Wing</option>
-    <option value="Woodlawn Apartments">Woodlawn Apartments</option>
+    <option value="">Select a grade</option>
+    <option value="Freshman">Freshman</option>
+    <option value="Upperclassman">Upperclassman</option>
    </select>
 
 
@@ -63,7 +43,7 @@
         var address_data = current_obj.address;
         var address_json = JSON.stringify(address_data);
         var parsed_addresses = JSON.parse(address_json);
-        if (sel == (parsed_obj.building_name)){
+        if (sel == (parsed_obj.grade)){
           text += "<tr><td>" + parsed_obj.grade + "</td><td>" + parsed_obj.building_name + "</td><td>" + parsed_obj.price + "</td><td>" + parsed_obj.room_type + "</td><td>" + parsed_obj.bathroom_type + "</td><td>" + parsed_obj.ac + "</td><td>" + parsed_addresses.addr + ", " + parsed_addresses.city + ', ' + parsed_addresses.zipcode + "</td></tr>";
         }
     }
@@ -73,6 +53,3 @@
     </script>
 </body>
 </html>
-
-
-
