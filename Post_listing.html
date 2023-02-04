@@ -24,7 +24,7 @@
       <!-- <h3>Using CSS to style an HTML Form</h3> -->
       
       <div>
-        <form method="post" action='postListings.php'>
+        <form method="get" action='postListings.php'>
           <label for="fname">First Name</label>
           <input type="text" id="fname" name="firstname" placeholder="John">
       
@@ -35,7 +35,7 @@
           <input type="tel" id="phone" name="phone" placeholder="412-268-2000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"required>
 
           <label for="contact-email">Contact Email Address</label>
-          <input type="email" id="email" placeholder="andrew@cmu.edu" pattern=".+\.+"required>
+          <input type="email" id="email" placeholder="andrew@cmu.edu" required>
           <!-- <input type="text" id="contact" name="contact"> -->
           <!-- <label for="country">Country</label>
           <select id="country" name="country">
@@ -44,8 +44,10 @@
             <option value="usa">USA</option>
           </select> -->
         
-          <input type="submit" value="Submit">
+          <input type="submit" value="Submit" name="submit-button">
         </form>
+
+        
       </div>
     </div>
       </body>
