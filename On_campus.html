@@ -19,12 +19,9 @@
 
   <select name="forma" onchange="location = this.value;">
     <option value="">Select a cateogry to organize by</option>
-    <option value="Grade.html">Grade</option>
-    <option value="Building.html">Building</option>
-    <option value="Price.html">Price</option>
-    <option value="Room_type.html">Room Type</option>
-    <option value="Bathroom.html">Bathroom Type</option>
-    <option value="AC.html">A/C</option>
+    <option value="about_page.html">Building</option>
+    <option value="Contact.php">Contact</option>
+    <option value="Sitemap.php">Sitemap</option>
    </select>
 
   <!-- <select id="myselect" class="primaryItems onchange="change_myselect(this.value)">
@@ -46,7 +43,7 @@
   $(".fold-table tr.view").on("click", function(){
     $(this).toggleClass("open").next(".fold").toggleClass("open");
   });
-});
+  });
   </script>
   <script>
   let text = "<table class='fold-table' border='2'> <thead>";
@@ -58,14 +55,14 @@
       var current_json = JSON.stringify(current_obj);
       var parsed_obj = JSON.parse(current_json);
 
-        var address_data = current_obj.address;
-        var address_json = JSON.stringify(address_data);
-        var parsed_addresses = JSON.parse(address_json);
-
-        text += "<tr><td>" + parsed_obj.grade + "</td><td>" + parsed_obj.building_name + "</td><td>" + parsed_obj.price + "</td><td>" + parsed_obj.room_type + "</td><td>" + parsed_obj.bathroom_type + "</td><td>" + parsed_obj.ac + "</td><td>" + parsed_addresses.addr + ", " + parsed_addresses.city + ', ' + parsed_addresses.zipcode + "</td></tr>";
+      var address_data = current_obj.address;
+      var address_json = JSON.stringify(address_data);
+      var parsed_addresses = JSON.parse(address_json);
+      text += "<tr class='view'><td>" + parsed_obj.grade + "</td><td>" + parsed_obj.building_name + "</td><td>" + parsed_obj.price + "</td><td>" + parsed_obj.room_type + "</td><td>" + parsed_obj.bathroom_type + "</td><td>" + parsed_obj.ac + "</td><td>" + parsed_addresses.addr + ", " + parsed_addresses.city + ', ' + parsed_addresses.zipcode + "</td></tr>";
+      text += '<tr class="fold"> <td colspan="7"><div class="fold-content"><h3>Company Name</h3></div></td></tr>'  
     }
-    text += "</table>"
-    document.getElementById("demo").innerHTML = text;
-    </script>
+  text += "</tbody></table>"
+  document.getElementById("demo").innerHTML = text;
+  </script>
 </body>
 </html>
