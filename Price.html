@@ -60,7 +60,7 @@
 
         
         if (price <= intsel){
-          text += "<tr id= '" + parsed_obj.building_name + "' class='view' ><td>" + parsed_obj.grade + "</td><td>" + parsed_obj.building_name + "</td><td>" + parsed_obj.price + "</td><td>" + parsed_obj.room_type + "</td><td>" + parsed_obj.bathroom_type + "</td><td>" + parsed_obj.ac + "</td><td>" + parsed_addresses.addr + ", " + parsed_addresses.city + ', ' + parsed_addresses.zipcode + "</td></tr>";
+          text += "<tr id= '" + parsed_obj.building_name + "' class='view' ><td>" + parsed_obj.grade + "</td><td>" + parsed_obj.building_name + "</td><td> $" + parsed_obj.price + "</td><td>" + parsed_obj.room_type + "</td><td>" + parsed_obj.bathroom_type + "</td><td>" + parsed_obj.ac + "</td><td>" + parsed_addresses.addr + ", " + parsed_addresses.city + ', ' + parsed_addresses.zipcode + "</td></tr>";
           text += '<tr class="fold"> <td colspan="7"><div class="fold-content"><a href="https://www.google.com/search?q=' + parsed_obj.building_name + '+cmu&client=safari&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjArsjLzPz8AhVmMlkFHbzIAZ4Q_AUoAnoECAEQBA&biw=1694&bih=937&dpr=2", Target="_blank"> See pictures' + '</a></div></td></tr>';  
         }
     }
