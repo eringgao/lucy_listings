@@ -35,17 +35,15 @@
                     <a href="about_page.html">About</a>
                   </div> -->
           
-            <h2>On campus housing options</h2>
+            <h2>Off campus housing options</h2>
           
           
             <select name="forma" onchange="location = this.value;">
               <option value="">Select a cateogry to organize by</option>
-              <option value="Grade.html">Grade</option>
-              <option value="Building.html">Building</option>
-              <option value="Price.html">Price</option>
-              <option value="Room_type.html">Room Type</option>
-              <option value="Bathroom.html">Bathroom Type</option>
-              <option value="AC.html">A/C</option>
+              <option value="beds.html">Number of Beds</option>
+              <option value="bath.html">Number of Bathrooms</option>
+              <option value="house.html">House Type</option>
+              <option value="Price2.html">Price</option>
              </select>
           
             <body style = "text-align:center;">   
@@ -61,7 +59,7 @@
             </script>
             <script>
             let text = "<table class='fold-table' class='center' border='2'> <thead>";
-            text += "<tr><th>" + "Grade" + "</th><th>" + "Building" + "</th><th>" + "Price" + "</th><th>" + "Room Type" + "</th><th>" + "Bathroom Type" + "</th><th>" + "A/C" + "</th><th>"+ "Address </tr></thead>";
+            text += "<tr><td>" + "Beds" + "</td><td>" + "Bath" + "</td><td>" + "Price" + "</td><td>" + "House Type" + "</td><td>" + "Address" + "</td>";
             text += '<tbody>'
             for (i = 0; i < off_campus.length; i++)
             {
@@ -72,8 +70,8 @@
                 var address_data = current_obj.address;
                 var address_json = JSON.stringify(address_data);
                 var parsed_addresses = JSON.parse(address_json);
-                text += "<tr class='view'><td>" + parsed_obj.grade + "</td><td>" + parsed_obj.building_name + "</td><td>" + parsed_obj.price + "</td><td>" + parsed_obj.room_type + "</td><td>" + parsed_obj.bathroom_type + "</td><td>" + parsed_obj.ac + "</td><td>" + parsed_addresses.addr + ", " + parsed_addresses.city + ', ' + parsed_addresses.zipcode + "</td></tr>";
-                text += '<tr class="fold"> <td colspan="7"><div class="fold-content"> <iframe src="URL"></iframe> <h3> Walk time: ' + parsed_obj.walk + '<br> Drive time: ' + parsed_obj.drive + '</h3></div></td></tr>'  
+                text += "<tr><td>" + parsed_obj.beds + "</td><td>" + parsed_obj.bath + "</td><td>" + parsed_obj.price + "</td><td>" + parsed_obj.house_type + "</td><td>" + parsed_addresses.addr + ", " + parsed_addresses.city + ', ' + parsed_addresses.zipcode + "</td></tr>";
+                text += '<tr class="fold"> <td colspan="7"><div class="fold-content"> <iframe src="URL"></iframe> <h3> Walk time: ' + parsed_obj.walk + '<br> Drive time: ' + parsed_obj.drive + '</h3></div></td></tr>';
               }
             text += "</tbody></table>"
             document.getElementById("demo").innerHTML = text;
