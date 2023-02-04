@@ -196,6 +196,20 @@ body, html {
   padding: 10px;
 }
 
+/* .rate {
+  background-color: white;
+  padding: 10px;
+} */
+
+.respond-comment {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  margin-top: 30px;
+  margin-right: 70px;
+  margin-left: 70px;
+  padding: 20px;
+}
+
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 900px) {
   .column {

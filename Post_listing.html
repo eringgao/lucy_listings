@@ -24,13 +24,23 @@
       <!-- <h3>Using CSS to style an HTML Form</h3> -->
       
       <div>
+<<<<<<< HEAD
         <form method="post" action='postListings.php'>
+=======
+        <!-- <form action="/action_page.php"> -->
+>>>>>>> 140c9d6 (Fix postings and ratings input forms)
           <label for="fname">First Name</label>
           <input type="text" id="fname" name="firstname" placeholder="John">
       
           <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Smith.">
+          <input type="text" id="lname" name="lastname" placeholder="Smith">
       
+          <label for="contact-phone">Contact Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="412-268-2000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"required>
+
+          <label for="contact-email">Contact Email Address</label>
+          <input type="email" id="email" placeholder="andrew@cmu.edu" pattern=".+\.+"required>
+          <!-- <input type="text" id="contact" name="contact"> -->
           <!-- <label for="country">Country</label>
           <select id="country" name="country">
             <option value="australia">Australia</option>

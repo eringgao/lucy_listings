@@ -15,22 +15,49 @@
           <a href="about_page.html">About</a>
         </div>
         <html>
-        
-      <body>
-        <div class="rate">
 
-          <input type="radio" id="star5" name="rate" value="5" />
-          <label for="star5" title="text">5 stars</label>
-          <input type="radio" id="star4" name="rate" value="4" />
-          <label for="star4" title="text">4 stars</label>
-          <input type="radio" id="star3" name="rate" value="3" />
-          <label for="star3" title="text">3 stars</label>
-          <input type="radio" id="star2" name="rate" value="2" />
-          <label for="star2" title="text">2 stars</label>
-          <input type="radio" id="star1" name="rate" value="1" />
-          <label for="star1" title="text">1 star</label>
+        <body>
+          <div class="rating-form">
+          <link rel="stylesheet" href="about-section.css">
+          <h3>Leave a Comment</h3>
+          
+          <div>
+
+            <!-- <label for="rate" class="required">Leave a Rating: </label>
+            <div class="rate">
+              <input type="radio" id="star5" name="rate" value="5" />
+              <label for="star5" title="text">5 stars</label>
+              <input type="radio" id="star4" name="rate" value="4" />
+              <label for="star4" title="text">4 stars</label>
+              <input type="radio" id="star3" name="rate" value="3" />
+              <label for="star3" title="text">3 stars</label>
+              <input type="radio" id="star2" name="rate" value="2" />
+              <label for="star2" title="text">2 stars</label>
+              <input type="radio" id="star1" name="rate" value="1" />
+              <label for="star1" title="text">1 star</label>
+            </div> -->
+
+            <label for="comment_author" class="required">Your name: </label>
+            <input type="text" name="comment_author" id="comment_author" value="" tabindex="1" required="required">
+        
+            <label for="email" class="required">Your email: </label>
+            <input type="email" name="email" id="email" value="" tabindex="2" required="required">
+        
+            <label for="comment" class="required">Your message: </label>
+            <textarea name="comment" id="comment" rows="10" cols="50" required="required"></textarea>
+
+      
+          <input type="hidden" name="comment_post_ID" value="0" id="comment_post_ID" />
+          <input name="submit" type="submit" onclick="incrementValue()" value="Submit comment" />
+            </form>
+          </div>
         </div>
-  <div id="respond">
+          </body>
+        
+      <!-- <body>
+
+        
+  <div class="respond-comment" id="respond">
 
         <h3>Leave a Comment</h3>
       
@@ -44,11 +71,25 @@
       
           <label for="comment" class="required">Your message: </label>
           <textarea name="comment" id="comment" rows="10" tabindex="4"  required="required"></textarea>
+
+          <div class="rate">
+
+            <input type="radio" id="star5" name="rate" value="5" />
+            <label for="star5" title="text">5 stars</label>
+            <input type="radio" id="star4" name="rate" value="4" />
+            <label for="star4" title="text">4 stars</label>
+            <input type="radio" id="star3" name="rate" value="3" />
+            <label for="star3" title="text">3 stars</label>
+            <input type="radio" id="star2" name="rate" value="2" />
+            <label for="star2" title="text">2 stars</label>
+            <input type="radio" id="star1" name="rate" value="1" />
+            <label for="star1" title="text">1 star</label>
+          </div>
       
           <input type="hidden" name="comment_post_ID" value="0" id="comment_post_ID" />
           <input name="submit" type="submit" onclick="incrementValue()" value="Submit comment" />
       
         </form> 
   </div> 
-</body>  
+</body>   -->
 </html> 
