@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="main.css">
+        <meta charset="utf-8">
+        <title>Lucy's Listings</title>
+      </head>
+        <div class="topnav">
+          <a class="active" href="index.html">Lucy's Listings</a>
+          <a href="On_campus.html">On Campus Housing</a>
+          <a href="Off_campus.html">Off Campus Housing</a>
+          <a href="Post_listing.html">Post a listing</a>
+          <a href="about_page.html">About</a>
+        </div>
+
+  <h2>On campus housing options</h2>
+
+
+  <select name="forma" onchange="change_myselect(this.value)">
+    <option value="">Select a building</option>
+    <option value="Boss House">Boss House</option>
+    <option value="Clyde House">Clyde House</option>
+    <option value="Donner House">Donner House	</option>
+    <option value="Fairfax Apartments">Fairfax Apartments</option>
+    <option value="Fifth Neville">Fifth Neville</option>
+    <option value="Greek Quad">Greek Quad</option>
+    <option value="Henderson House">Henderson House</option>
+    <option value="The Highlands Apartments">The Highlands Apartments</option>
+    <option value="Margaret Morrison Apartments">Margaret Morrison Apartments</option>
+    <option value="McGill House">McGill House</option>
+    <option value="Morewood E-Tower">Morewood E-Tower</option>
+    <option value="Morewood Gardens">Morewood Gardens</option>
+    <option value="Mudge House">Mudge House</option>
+    <option value="Neville Apartments">Neville Apartments</option>
+    <option value="Residence on Fifth">Residence on Fifth</option>
+    <option value="Resnik House">Resnik House</option>
+    <option value="Roselawn House">Roselawn House</option>
+    <option value="Shirley Apartments">Shirley Apartments</option>
+    <option value="Spirit House">Spirit House</option>
+    <option value="Stever House">Stever House</option>
+    <option value="Welch House">Welch House</option>
+    <option value="West Wing">West Wing</option>
+    <option value="Woodlawn Apartments">Woodlawn Apartments</option>
+   </select>
+
+
+  <p id="demo"></p>
+
+  <body style = "text-align:center;">   
+
+  <script src="cmu_data.js"></script>
+
+  <script>
+    function change_myselect(sel) {
+    let text = "<table border='2'>";
+    text += "<tr><td>" + "Grade" + "</td><td>" + "Building" + "</td><td>" + "Price" + "</td><td>" + "Room Type" + "</td><td>" + "Bathroom Type" + "</td><td>" + "A/C" + "</td><td>"+ "Address";
+    for (i = 0; i < cmu_data.length; i++)
+    {
+        var current_obj = cmu_data[i];
+        var current_json = JSON.stringify(current_obj);
+        var parsed_obj = JSON.parse(current_json);
+
+        var address_data = current_obj.address;
+        var address_json = JSON.stringify(address_data);
+        var parsed_addresses = JSON.parse(address_json);
+        console.log(sel, parsed_obj.building_name);
+        if (sel == (parsed_obj.building_name)){
+          text += "<tr><td>" + parsed_obj.grade + "</td><td>" + parsed_obj.building_name + "</td><td>" + parsed_obj.price + "</td><td>" + parsed_obj.room_type + "</td><td>" + parsed_obj.bathroom_type + "</td><td>" + parsed_obj.ac + "</td><td>" + parsed_addresses.addr + ", " + parsed_addresses.city + ', ' + parsed_addresses.zipcode + "</td></tr>";
+        }
+    }
+    text += "</table>"
+    document.getElementById("demo").innerHTML = text;
+  }
+    </script>
+</body>
+</html>
