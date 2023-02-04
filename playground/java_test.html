@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Make a table based on the value of a drop down menu.</h2>
+
+<select id="myselect" onchange="change_myselect(this.value)">
+  <option value="">Choose an option:</option>
+  <option value="building_name">Building</option>
+  <option value="products">Products</option>
+  <option value="suppliers">Suppliers</option>
+</select>
+
+<p id="demo"></p>
+
+<script src="cmu_data.js"></script>
+<script>
+function change_myselect(sel) {
+  const dbParam = JSON.stringify({table:sel,limit:20});
+  const xmlhttp = new XMLHttpRequest();
+  xmlhttp.onload = function() {
+    text = "<table border='1'>"
+    console.log("fuck");
+    for (x in cmu_data) {
+      text += "<tr><td>" + cmu_data[x].building_name + "</td></tr>";
+      console.log(cmu_data[x]);
+    }
+    text += "</table>"    
+    document.getElementById("demo").innerHTML = text;
+  }
+  xmlhttp.open("POST", "json_demo_html_table.php", true);
+  xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  xmlhttp.send("x=" + dbParam);
+}
+</script>
