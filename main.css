@@ -108,12 +108,12 @@ img {
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #9b2d21;
+  background-color: #d7b6b2;
   color: white;
 }
 body, html {
   height: 100%;
-  background-color: #b04646
+  background-color: #93a8ac
 }
 /* The hero image */
 .hero-image{
