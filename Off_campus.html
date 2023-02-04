@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <html lang="en">
-<link rel="stylesheet" href="main.css">
+<!-- <link rel="stylesheet" href="off_campus.css"> -->
 <div class="off-section">
     <head>
         <link rel="stylesheet" href="main.css">
-        <link rel="stylesheet" href="main.css">
+        <!-- <link rel="stylesheet" href="off_campus.css"> -->
         <meta charset="utf-8">
         <title>Lucy's Listings</title>
       </head>
@@ -16,6 +16,24 @@
           <a href="Post_listing.html">Post a listing</a>
           <a href="about_page.html">About</a>
         </div>
+
+        <!-- <html> -->
+
+          <!-- <!DOCTYPE html>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          <html lang="en">
+              <head>
+                  <link rel="stylesheet" href="main.css">
+                  <meta charset="utf-8">
+                  <title>Lucy's Listings</title>
+                </head>
+                  <div class="topnav">
+                    <a href="index.html">Lucy's Listings</a>
+                    <a class="active" href="On_campus.html">On Campus Housing</a>
+                    <a href="Off_campus.html">Off Campus Housing</a>
+                    <a href="Post_listing.html">Post a listing</a>
+                    <a href="about_page.html">About</a>
+                  </div> -->
           
             <h2>On campus housing options</h2>
           
@@ -55,7 +73,7 @@
                 var address_json = JSON.stringify(address_data);
                 var parsed_addresses = JSON.parse(address_json);
                 text += "<tr class='view'><td>" + parsed_obj.grade + "</td><td>" + parsed_obj.building_name + "</td><td>" + parsed_obj.price + "</td><td>" + parsed_obj.room_type + "</td><td>" + parsed_obj.bathroom_type + "</td><td>" + parsed_obj.ac + "</td><td>" + parsed_addresses.addr + ", " + parsed_addresses.city + ', ' + parsed_addresses.zipcode + "</td></tr>";
-                text += '<tr class="fold"> <td colspan="7"><div class="fold-content"><a href="https://www.google.com/search?q=' + parsed_obj.building_name + '+cmu&client=safari&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjArsjLzPz8AhVmMlkFHbzIAZ4Q_AUoAnoECAEQBA&biw=1694&bih=937&dpr=2"> See pictures' + '</a></div></td></tr>'  
+                text += '<tr class="fold"> <td colspan="7"><div class="fold-content"> <iframe src="URL"></iframe> <p> Walk time: ' + parsed_obj.walk + '\n Drive time: ' + parsed_obj.drive + '</p></div></td></tr>'  
               }
             text += "</tbody></table>"
             document.getElementById("demo").innerHTML = text;
