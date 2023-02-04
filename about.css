@@ -86,7 +86,11 @@ p {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
     padding: 12px;
     text-align: center;
-    background-color: #25aed3;
+<<<<<<< HEAD
+    background-color: #d7ceb2;
+=======
+    background-color: #8bafb9;
+>>>>>>> 448650329c8638777b0fb548bacc83ec74f2b11e
   }
 
 /* Add a black background color to the top navigation */

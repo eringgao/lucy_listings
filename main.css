@@ -74,6 +74,15 @@ p {
     margin: 20px;
   }
 
+img {
+    border: 0px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+    text-align: center;
+    place-items: center;
+  }
+
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #93a8ac;
@@ -99,7 +108,7 @@ p {
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #d7ceb2;
+  background-color: #d7b6b2;
   color: white;
 }
 body, html {
