@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- <html> -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <html lang="en">
 <link rel="stylesheet" href="about.css">
@@ -7,19 +8,44 @@
     <link rel="stylesheet" href="main.css">
     <meta charset="utf-8">
     <title>Lucy's Listings</title>
-    </head>
-      <div class="topnav">
-        <a class="active" href="index.html">Lucy's Listings</a>
-        <a href="On_campus.html">On Campus Housing</a>
-        <a href="Off_campus.html">Off Campus Housing</a>
-        <a href="Post_listing.html">Post a listing</a>
-        <a href="about_page.html">About</a>
+  </head>
+    <div class="topnav">
+      <a class="active" href="index.html">Lucy's Listings</a>
+      <a href="On_campus.html">On Campus Housing</a>
+      <a href="Off_campus.html">Off Campus Housing</a>
+      <a href="Post_listing.html">Post a listing</a>
+      <a href="about_page.html">About</a>
+    </div>
+
+      <body>
+      <div class="about-form">
+      <link rel="stylesheet" href="about-section.css">
+      <h3>Enter Information About Your Listing</h3>
+      <!-- <h3>Using CSS to style an HTML Form</h3> -->
+      
+      <div>
+        <form method="post" action='postListings.php'>
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="John">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Smith.">
+      
+          <!-- <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select> -->
+        
+          <input type="submit" value="Submit">
+        </form>
       </div>
+    </div>
+      </body>
 
-<div class="about-section">
-<<<<<<< HEAD
-
-
+<!-- <div class="about-section">
+  <link rel="stylesheet" href="about-section.css">
   <form id='formElem'>
         <label for="fname">Full Name </label><br>
         <input type="text" id="fname" name="fname"><br>
@@ -29,65 +55,30 @@
         <input type="text" id="address" name="address"><br>
         <label for="City ">City:</label><br>
         <input type="text" id="city" name="city"><br>
+        <label for="state ">State:</label><br>
+        <input type="text" id="state" name="state"><br>
         <label for="Country ">Country:</label><br>
         <input type="text" id="country" name="country"><br>
-        <label for="avb">Availability Date:</label><br>
-        <input type="text" id="Avlb" name="Avlb"><br>
+        <label for="avb">Housing Availability Start Date:</label><br>
+        <input type="date" id="Avlb" name="Avlb-S"><br>
+        <label for="avb">Housing Availability End Date:</label><br>
+        <input type="date" id="Avlb" name="Avlb-E"><br>
         <label for="bath ">Bathrooms:</label><br>
         <input type="text" id="bathroom" name="bathroom"><br>
         <label for="Beds ">Bedrooms:</label><br>
         <input type="text" id="bedrooms" name="bedrooms"><br>
-        <label for="home ">HomeType:</label><br>
-        <input type="text" id="home" name="Hometype"><br> 
-        <label for="price ">Price:</label><br>
-        <input type="text" id="price" name="price"><br>
-         
-        <br>
+        <label for="home ">House Type:</label><br>
+          <div id="radContainer">
+            <input type="checkbox" id="home" name="home" value="SINGLE_FAMILY"> Single Family<br>
+            <input type="checkbox" id="home" name="home" value="APARTMENT"> Apartment<br>
+            <input type="checkbox" id="home" name="home" value="TOWNHOUSE"> Townouse<br>
+            <input type="checkbox" id="otherRad" name="home" value="OTHER">
+            <input id="other" type="text" placeholder="Other"/>
+          </div>
+        <label for="price ">Price per Month (USD):</label><br>
+        <input type="number" id="price" name="price" placeholder="1050"><br>
+
         <button type="submit">Submit</button>  
-      </form> 
+      </form>  -->
 
-
-<!DOCTYPE html>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<html lang="en">
-<link rel="stylesheet" href="main.css">
-
-<style>
-  input[type=text], select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    /* border-radius: 4px; */
-    box-sizing: border-box;
-  }
-  
-  input[type=submit] {
-    width: 100%;
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  input[type=submit]:hover {
-    background-color: #45a049;
-  }
-  
-  div {
-    /* border-radius: 5px; */
-    background-color: #f2f2f2;
-    /* padding: 20px; */
-  }
-  </style>
-=======
-  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc0W1lPMhVGjFQk5mHoNxteS_xnzVZkjzzRI2Yo2Mxu5XFJyw/viewform?embedded=true" width="640" height="2079" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-  <!DOCTYPE html>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <html lang="en">
-  <link rel="stylesheet" href="main.css">
->>>>>>> ee1ae717a4173a948fcca329a32ec2b4d506a203
+      <!-- </html> -->
