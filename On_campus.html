@@ -19,23 +19,36 @@
 
   <select name="forma" onchange="location = this.value;">
     <option value="">Select a cateogry to organize by</option>
-    <option value="Grade.html">Grade</option>
-    <option value="Building.html">Building</option>
-    <option value="Price.html">Price</option>
-    <option value="Room_type.html">Room Type</option>
-    <option value="Bathroom.html">Bathroom Type</option>
-    <option value="AC.html">A/C</option>
+    <option value="about_page.html">Building</option>
+    <option value="Contact.php">Contact</option>
+    <option value="Sitemap.php">Sitemap</option>
    </select>
 
-  <p id="demo"></p>
+  <!-- <select id="myselect" class="primaryItems onchange="change_myselect(this.value)">
+    <option value="">Select a cateogry to organize by</option>
+   <option value="building_name">Grade</option>
+   <a href="about_page.html"><option value="products">Building</option> </a>
+    <option value="suppliers">Price</option>
+    <option value="suppliers">Room Type</option>
+    <option value="suppliers">Bathoroom Type</option>
+    <option value="suppliers">A/C</option>
+  </select> -->
 
   <body style = "text-align:center;">   
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <p id="demo" ></p>
   <script src="cmu_data.js"></script>
-
   <script>
-  let text = "<table class='center' border='2'>";
-  text += "<tr><td>" + "Grade" + "</td><td>" + "Building" + "</td><td>" + "Price" + "</td><td>" + "Room Type" + "</td><td>" + "Bathroom Type" + "</td><td>" + "A/C" + "</td><td>"+ "Address";
+    $(function(){
+  $(".fold-table tr.view").on("click", function(){
+    $(this).toggleClass("open").next(".fold").toggleClass("open");
+  });
+  });
+  </script>
+  <script>
+  let text = "<table class='fold-table' class='center' border='2'> <thead>";
+  text += "<tr><th>" + "Grade" + "</th><th>" + "Building" + "</th><th>" + "Price" + "</th><th>" + "Room Type" + "</th><th>" + "Bathroom Type" + "</th><th>" + "A/C" + "</th><th>"+ "Address </tr></thead>";
+  text += '<tbody>'
   for (i = 0; i < cmu_data.length; i++)
   {
       var current_obj = cmu_data[i];
@@ -45,10 +58,10 @@
       var address_data = current_obj.address;
       var address_json = JSON.stringify(address_data);
       var parsed_addresses = JSON.parse(address_json);
-
-      text += "<tr><td>" + parsed_obj.grade + "</td><td>" + parsed_obj.building_name + "</td><td>" + parsed_obj.price + "</td><td>" + parsed_obj.room_type + "</td><td>" + parsed_obj.bathroom_type + "</td><td>" + parsed_obj.ac + "</td><td>" + parsed_addresses.addr + ", " + parsed_addresses.city + ', ' + parsed_addresses.zipcode + "</td></tr>";
-  }
-  text += "</table>"
+      text += "<tr class='view'><td>" + parsed_obj.grade + "</td><td>" + parsed_obj.building_name + "</td><td>" + parsed_obj.price + "</td><td>" + parsed_obj.room_type + "</td><td>" + parsed_obj.bathroom_type + "</td><td>" + parsed_obj.ac + "</td><td>" + parsed_addresses.addr + ", " + parsed_addresses.city + ', ' + parsed_addresses.zipcode + "</td></tr>";
+      text += '<tr class="fold"> <td colspan="7"><div class="fold-content"><h3>Company Name</h3></div></td></tr>'  
+    }
+  text += "</tbody></table>"
   document.getElementById("demo").innerHTML = text;
   </script>
 </body>
