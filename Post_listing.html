@@ -25,13 +25,13 @@
       <div>
         <form method="get" action='/post_listing_success.html'>
           <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="John">
+          <input type="text" id="fname" name="firstname" placeholder="John"required>
       
           <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Smith">
+          <input type="text" id="lname" name="lastname" placeholder="Smith"required>
       
           <label for="contact-phone">Contact Phone Number</label>
-          <input type="tel" id="phone" name="phone" placeholder="412-268-2000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+          <input type="tel" id="phone" name="phone" placeholder="412-268-2000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"required>
 
           <label for="contact-email">Contact Email </label>
           <input type="email" id="email" name="email" placeholder="andrew@cmu.edu">
@@ -71,3 +71,14 @@
     </body>
     </div>
     </html>
+
+    <script>
+      function myFunction() {
+        var selectedForm=document.getElementById("lname");
+
+        window.location.assign("/post_listing_success.html")
+        // window.location.href = 'http://www.google.com';
+        // document.write('Success')
+        // document.write(selectedForm)
+      }
+    </script>
