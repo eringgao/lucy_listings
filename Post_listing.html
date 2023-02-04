@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- <html> -->
+<html>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <html lang="en">
 <link rel="stylesheet" href="about.css">
@@ -21,72 +21,43 @@
       <div class="about-form">
       <link rel="stylesheet" href="about-section.css">
       <h3>Enter Information About Your Listing</h3>
-      <!-- <h3>Using CSS to style an HTML Form</h3> -->
       
       <div>
-        <form method="get" action='/postListings.php'>
+        <form method="get" action='/post_listing_success.html'>
           <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="John">
+          <input type="text" id="fname" name="firstname" placeholder="John"required>
       
           <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Smith">
+          <input type="text" id="lname" name="lastname" placeholder="Smith"required>
       
           <label for="contact-phone">Contact Phone Number</label>
           <input type="tel" id="phone" name="phone" placeholder="412-268-2000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"required>
 
           <label for="contact-email">Contact Email Address</label>
-          <input type="email" id="email" name="email" placeholder="andrew@cmu.edu" required>
-          <!-- <input type="text" id="contact" name="contact"> -->
-          <!-- <label for="country">Country</label>
-          <select id="country" name="country">
-            <option value="australia">Australia</option>
-            <option value="canada">Canada</option>
-            <option value="usa">USA</option>
-          </select> -->
-        
-          <input type="submit" value="Submit" name="submit-button">
+          <input type="email" id="email" name="email" placeholder="andrew@cmu.edu"required>
+          <input type="submit" value="Submit" name="submit-button" onclick="myFunction()">
+          <!-- <button type="button" onclick="document.write('Success')">Submit</button> -->
+
+
+
+          <!-- <input type="submit" value="Submit" name="submit-button" href="post_listing_success.html"> -->
+          <!-- <form action="post_listing_success.html">
+            <input type="submit" value="Go to Google" />
+            </form> -->
         </form>
-
-        
       </div>
+      </div>
+    </body>
     </div>
-      </body>
+    </html>
 
-<!-- <div class="about-section">
-  <link rel="stylesheet" href="about-section.css">
-  <form id='formElem'>
-        <label for="fname">Full Name </label><br>
-        <input type="text" id="fname" name="fname"><br>
-        <label for="contact">Contact:</label><br>
-        <input type="text" id="contact" name="contact"><br>
-        <label for="adress">Address:</label><br>
-        <input type="text" id="address" name="address"><br>
-        <label for="City ">City:</label><br>
-        <input type="text" id="city" name="city"><br>
-        <label for="state ">State:</label><br>
-        <input type="text" id="state" name="state"><br>
-        <label for="Country ">Country:</label><br>
-        <input type="text" id="country" name="country"><br>
-        <label for="avb">Housing Availability Start Date:</label><br>
-        <input type="date" id="Avlb" name="Avlb-S"><br>
-        <label for="avb">Housing Availability End Date:</label><br>
-        <input type="date" id="Avlb" name="Avlb-E"><br>
-        <label for="bath ">Bathrooms:</label><br>
-        <input type="text" id="bathroom" name="bathroom"><br>
-        <label for="Beds ">Bedrooms:</label><br>
-        <input type="text" id="bedrooms" name="bedrooms"><br>
-        <label for="home ">House Type:</label><br>
-          <div id="radContainer">
-            <input type="checkbox" id="home" name="home" value="SINGLE_FAMILY"> Single Family<br>
-            <input type="checkbox" id="home" name="home" value="APARTMENT"> Apartment<br>
-            <input type="checkbox" id="home" name="home" value="TOWNHOUSE"> Townouse<br>
-            <input type="checkbox" id="otherRad" name="home" value="OTHER">
-            <input id="other" type="text" placeholder="Other"/>
-          </div>
-        <label for="price ">Price per Month (USD):</label><br>
-        <input type="number" id="price" name="price" placeholder="1050"><br>
+    <script>
+      function myFunction() {
+        var selectedForm=document.getElementById("lname");
 
-        <button type="submit">Submit</button>  
-      </form>  -->
-
-      <!-- </html> -->
+        window.location.assign("/post_listing_success.html")
+        // window.location.href = 'http://www.google.com';
+        // document.write('Success')
+        // document.write(selectedForm)
+      }
+    </script>
