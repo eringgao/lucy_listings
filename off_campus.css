@@ -140,8 +140,9 @@ label {
   #respond h3{
     position: relative;
   }
-  #respond input[type='text'],
-  #respond input[type='email'],
+
+  /* #respond input[type='text'], */
+  /* #respond input[type='email'],
   #respond textarea {
     margin-bottom: 10px;
     display: block;
@@ -156,7 +157,7 @@ label {
     border-radius: 5px;
   
     line-height: 1.4em;
-}
+} */
 
 
 .rating-form {
