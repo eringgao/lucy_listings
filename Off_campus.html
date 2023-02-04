@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <html lang="en">
+<link rel="stylesheet" href="off_campus.css">
+<div class="off-section">
     <head>
         <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="off_campus.css">
@@ -15,6 +17,55 @@
           <a href="about_page.html">About</a>
         </div>
         <html>
+          
+            <h2>On campus housing options</h2>
+          
+          
+        <select name="forma" onchange="location = this.value;">
+          <option value="">Select a cateogry to organize by</option>
+          <option value="Grade.html">Grade</option>
+          <option value="Building.html">Building</option>
+          <option value="Price.html">Price</option>
+          <option value="Room_type.html">Room Type</option>
+          <option value="Bathroom.html">Bathroom Type</option>
+          <option value="AC.html">A/C</option>
+          </select>
+          
+            <body style = "text-align:center;">   
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+            <p id="demo" ></p>
+            <script src="cmu_data.js"></script>
+            <script>
+              $(function(){
+            $(".fold-table tr.view").on("click", function(){
+              $(this).toggleClass("open").next(".fold").toggleClass("open");
+            });
+            });
+            </script>
+            <script>
+            let text = "<table class='fold-table' class='center' border='2'> <thead>";
+            text += "<tr><th>" + "Grade" + "</th><th>" + "Building" + "</th><th>" + "Price" + "</th><th>" + "Room Type" + "</th><th>" + "Bathroom Type" + "</th><th>" + "A/C" + "</th><th>"+ "Address </tr></thead>";
+            text += '<tbody>'
+            for (i = 0; i < cmu_data.length; i++)
+            {
+                var current_obj = cmu_data[i];
+                var current_json = JSON.stringify(current_obj);
+                var parsed_obj = JSON.parse(current_json);
+          
+                var address_data = current_obj.address;
+                var address_json = JSON.stringify(address_data);
+                var parsed_addresses = JSON.parse(address_json);
+                text += "<tr class='view'><td>" + parsed_obj.grade + "</td><td>" + parsed_obj.building_name + "</td><td>" + parsed_obj.price + "</td><td>" + parsed_obj.room_type + "</td><td>" + parsed_obj.bathroom_type + "</td><td>" + parsed_obj.ac + "</td><td>" + parsed_addresses.addr + ", " + parsed_addresses.city + ', ' + parsed_addresses.zipcode + "</td></tr>";
+                text += '<tr class="fold"> <td colspan="7"><div class="fold-content"><a href="https://www.google.com/search?q=' + parsed_obj.building_name + '+cmu&client=safari&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjArsjLzPz8AhVmMlkFHbzIAZ4Q_AUoAnoECAEQBA&biw=1694&bih=937&dpr=2"> See pictures' + '</a></div></td></tr>'  
+              }
+            text += "</tbody></table>"
+            document.getElementById("demo").innerHTML = text;
+            </script>
+          </body>
+          </html>
+          
+          
+          
 
         <body>
           <div class="rating-form">
@@ -53,7 +104,7 @@
           </div>
         </div>
           </body>
-        
+        </div>
       <!-- <body>
 
         
