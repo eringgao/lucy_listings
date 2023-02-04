@@ -19,7 +19,7 @@
 <div class="about-section">
 
 
-  <form id='formElem'>
+  <form id='formElem' action='json_store.php' method='post'>
         <label for="fname">Full Name </label><br>
         <input type="text" id="fname" name="fname"><br>
         <label for="contact">Contact:</label><br>
@@ -28,6 +28,8 @@
         <input type="text" id="address" name="address"><br>
         <label for="City ">City:</label><br>
         <input type="text" id="city" name="city"><br>
+        <label for="state ">State:</label><br>
+        <input type="text" id="state" name="state"><br>
         <label for="Country ">Country:</label><br>
         <input type="text" id="country" name="country"><br>
         <label for="avb">Availability Date:</label><br>
@@ -44,6 +46,15 @@
         <br>
         <button type="submit">Submit</button>  
       </form> 
+
+<div class="results">
+  <p class="result-json-output"></p>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="./form-to-json.js"></script>
+<script src="./script.js"></script>
 
 
 <!DOCTYPE html>
