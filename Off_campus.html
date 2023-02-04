@@ -39,7 +39,7 @@
           
           
             <select name="forma" onchange="location = this.value;">
-              <option value="">Select a cateogry to organize by</option>
+              <option value="">Select a category to organize by</option>
               <option value="beds.html">Number of Beds</option>
               <option value="bath.html">Number of Bathrooms</option>
               <option value="house.html">House Type</option>
@@ -59,7 +59,7 @@
             </script>
             <script>
             let text = "<table class='fold-table' class='center' border='2'> <thead>";
-            text += "<tr><td>" + "Beds" + "</td><td>" + "Bath" + "</td><td>" + "Price" + "</td><td>" + "House Type" + "</td><td>" + "Address" + "</td>";
+            text += "<tr><th>" + "Beds" + "</th><th>" + "Bath" + "</th><th>" + "Price" + "</th><th>" + "House Type" + "</th><th>" + "Address" + "</th>";
             text += '<tbody>'
             for (i = 0; i < off_campus.length; i++)
             {
@@ -70,8 +70,8 @@
                 var address_data = current_obj.address;
                 var address_json = JSON.stringify(address_data);
                 var parsed_addresses = JSON.parse(address_json);
-                text += "<tr><td>" + parsed_obj.beds + "</td><td>" + parsed_obj.bath + "</td><td>" + parsed_obj.price + "</td><td>" + parsed_obj.house_type + "</td><td>" + parsed_addresses.addr + ", " + parsed_addresses.city + ', ' + parsed_addresses.zipcode + "</td></tr>";
-                text += '<tr class="fold"> <td colspan="7"><div class="fold-content"> <iframe src="URL"></iframe> <h3> Walk time: ' + parsed_obj.walk + '<br> Drive time: ' + parsed_obj.drive + '</h3></div></td></tr>';
+                text += "<tr id= '" + parsed_obj.building_name + "' class='view' ><td>" + parsed_obj.beds + "</td><td>" + parsed_obj.bath + "</td><td>" + parsed_obj.price + "</td><td>" + parsed_obj.house_type + "</td><td>" + parsed_addresses.addr + ", " + parsed_addresses.city + ', ' + parsed_addresses.zipcode + "</td></tr>";
+                text += '<tr class="fold"> <td colspan="5"><div class="fold-content"> <h3> Walking distance: ' + parsed_obj.walk.toFixed(2) + '<br> Driving distance: ' + parsed_obj.drive.toFixed(2) + '</h3></div></td></tr>';
               }
             text += "</tbody></table>"
             document.getElementById("demo").innerHTML = text;

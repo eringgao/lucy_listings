@@ -43,9 +43,9 @@
 
   <script>
     function change_myselect(sel) {
-    let text = "<table class='fold-table' class='center' border='2'> <thead>";
-    text += "<tr><td>" + "Beds" + "</td><td>" + "Bath" + "</td><td>" + "Price" + "</td><td>" + "House Type" + "</td><td>" + "Address" + "</td>"
-    text += '<tbody>';
+      let text = "<table class='fold-table' class='center' border='2'> <thead>";
+      text += "<tr><th>" + "Beds" + "</th><th>" + "Bath" + "</th><th>" + "Price" + "</th><th>" + "House Type" + "</th><th>" + "Address" + "</th>";
+      text += '<tbody>'
     for (i = 0; i < off_campus.length; i++)
     {
         var current_obj = off_campus[i];
@@ -56,11 +56,10 @@
         var address_json = JSON.stringify(address_data);
         var parsed_addresses = JSON.parse(address_json);
         if (sel == (parsed_obj.bath)){
-          text += "<tr><td>" + parsed_obj.beds + "</td><td>" + parsed_obj.bath + "</td><td>" + parsed_obj.price + "</td><td>" + parsed_obj.house_type + "</td><td>" + parsed_addresses.addr + ", " + parsed_addresses.city + ', ' + parsed_addresses.zipcode + "</td></tr>";
-          text += '<tr class="fold"> <td colspan="7"><div class="fold-content"><a href="https://www.google.com/search?q=' + parsed_obj.building_name + '+cmu&client=safari&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjArsjLzPz8AhVmMlkFHbzIAZ4Q_AUoAnoECAEQBA&biw=1694&bih=937&dpr=2"> See pictures' + '</a></div></td></tr>';
-        }
-    }
-    text += "</tbody></table>";
+          text += "<tr id= '" + parsed_obj.building_name + "' class='view' ><td>" + parsed_obj.beds + "</td><td>" + parsed_obj.bath + "</td><td>" + parsed_obj.price + "</td><td>" + parsed_obj.house_type + "</td><td>" + parsed_addresses.addr + ", " + parsed_addresses.city + ', ' + parsed_addresses.zipcode + "</td></tr>";
+                text += '<tr class="fold"> <td colspan="5"><div class="fold-content"> <h3> Walking distance: ' + parsed_obj.walk.toFixed(2) + '<br> Driving distance: ' + parsed_obj.drive.toFixed(2) + '</h3></div></td></tr>';
+      }
+    text += "</tbody></table>"
     document.getElementById("demo").innerHTML = text;
   }
     </script>
