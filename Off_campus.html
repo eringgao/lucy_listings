@@ -73,7 +73,7 @@
                 var address_json = JSON.stringify(address_data);
                 var parsed_addresses = JSON.parse(address_json);
                 text += "<tr class='view'><td>" + parsed_obj.grade + "</td><td>" + parsed_obj.building_name + "</td><td>" + parsed_obj.price + "</td><td>" + parsed_obj.room_type + "</td><td>" + parsed_obj.bathroom_type + "</td><td>" + parsed_obj.ac + "</td><td>" + parsed_addresses.addr + ", " + parsed_addresses.city + ', ' + parsed_addresses.zipcode + "</td></tr>";
-                text += '<tr class="fold"> <td colspan="7"><div class="fold-content"> <iframe src="URL"></iframe> <p> Walk time: ' + parsed_obj.walk + '\n Drive time: ' + parsed_obj.drive + '</p></div></td></tr>'  
+                text += '<tr class="fold"> <td colspan="7"><div class="fold-content"> <iframe src="URL"></iframe> <h3> Walk time: ' + parsed_obj.walk + '<br> Drive time: ' + parsed_obj.drive + '</h3></div></td></tr>'  
               }
             text += "</tbody></table>"
             document.getElementById("demo").innerHTML = text;
