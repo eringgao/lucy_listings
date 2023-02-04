@@ -7,6 +7,7 @@
     //         $datae[] = array(
     //             'FirstName' => $_POST['firstname'],
     //             'Lastname' => $_POST['lastname'],
+    //             'College' => $_POST['college'],
     //         );
     //         return json_encode($datae);
     //     }
