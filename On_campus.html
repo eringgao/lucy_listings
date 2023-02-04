@@ -19,9 +19,12 @@
 
   <select name="forma" onchange="location = this.value;">
     <option value="">Select a cateogry to organize by</option>
-    <option value="about_page.html">Building</option>
-    <option value="Contact.php">Contact</option>
-    <option value="Sitemap.php">Sitemap</option>
+    <option value="Grade.html">Grade</option>
+    <option value="Building.html">Building</option>
+    <option value="Price.html">Price</option>
+    <option value="Room_type.html">Room Type</option>
+    <option value="Bathroom.html">Bathroom Type</option>
+    <option value="AC.html">A/C</option>
    </select>
 
   <!-- <select id="myselect" class="primaryItems onchange="change_myselect(this.value)">
@@ -46,7 +49,7 @@
   });
   </script>
   <script>
-  let text = "<table class='fold-table' border='2'> <thead>";
+  let text = "<table class='fold-table' class='center' border='2'> <thead>";
   text += "<tr><th>" + "Grade" + "</th><th>" + "Building" + "</th><th>" + "Price" + "</th><th>" + "Room Type" + "</th><th>" + "Bathroom Type" + "</th><th>" + "A/C" + "</th><th>"+ "Address </tr></thead>";
   text += '<tbody>'
   for (i = 0; i < cmu_data.length; i++)
@@ -59,10 +62,12 @@
       var address_json = JSON.stringify(address_data);
       var parsed_addresses = JSON.parse(address_json);
       text += "<tr class='view'><td>" + parsed_obj.grade + "</td><td>" + parsed_obj.building_name + "</td><td>" + parsed_obj.price + "</td><td>" + parsed_obj.room_type + "</td><td>" + parsed_obj.bathroom_type + "</td><td>" + parsed_obj.ac + "</td><td>" + parsed_addresses.addr + ", " + parsed_addresses.city + ', ' + parsed_addresses.zipcode + "</td></tr>";
-      text += '<tr class="fold"> <td colspan="7"><div class="fold-content"><h3>Company Name</h3></div></td></tr>'  
+      text += '<tr class="fold"> <td colspan="7"><div class="fold-content"><a href="https://www.google.com/search?q=' + parsed_obj.building_name + '+cmu&client=safari&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjArsjLzPz8AhVmMlkFHbzIAZ4Q_AUoAnoECAEQBA&biw=1694&bih=937&dpr=2"> See pictures' + '</a></div></td></tr>'  
     }
   text += "</tbody></table>"
   document.getElementById("demo").innerHTML = text;
   </script>
 </body>
 </html>
+
+
