@@ -196,6 +196,31 @@ body, html {
   padding: 10px;
 }
 
+tr:hover {background-color: #D6EEEE;}
+
+tr {
+  border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+table tr td:empty {
+  width: 100px;
+}
+
+td {
+  border-right: solid 1px rgb(0, 0, 0); 
+  border-left: solid 1px rgb(0, 0, 0);
+  padding: 10px 0;
+}
+
+table {
+  border-spacing: 100px 0;
+}
+
+th, td {
+  padding: 15px;
+}
+
+
 /* .rate {
   background-color: white;
   padding: 10px;
@@ -223,6 +248,4 @@ body, html {
     width: 100%;
   }
 }
-
-
 

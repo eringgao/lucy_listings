@@ -12,6 +12,7 @@ cmu_data = [
         "price": "5,741",
         "description": null,
         "building_name": "Boss House",
+        "grade": "Freshman",
         "room_type": "Semi-Suite Double",
         "bathroom_type": "Shared",
         "ac": "Window"
@@ -29,6 +30,7 @@ cmu_data = [
         "price": "6,665",
         "description": null,
         "building_name": "Boss House",
+        "grade": "Freshman",
         "room_type": "Semi-Suite Single",
         "bathroom_type": "Shared",
         "ac": "Window"
@@ -46,6 +48,7 @@ cmu_data = [
         "price": "6,055",
         "description": null,
         "building_name": "Clyde House",
+        "grade": "Freshman",
         "room_type": "Studio Apartment Double",
         "bathroom_type": "Shared",
         "ac": "No"
@@ -63,7 +66,8 @@ cmu_data = [
         "price": "6,055",
         "description": null,
         "building_name": "Clyde House",
-        "room_type": "Studio Apartment triple",
+        "grade": "Freshman",
+        "room_type": "Studio Apartment Triple",
         "bathroom_type": "Shared",
         "ac": "No"
     },
@@ -80,6 +84,7 @@ cmu_data = [
         "price": "5,200",
         "description": null,
         "building_name": "Donner House",
+        "grade": "Freshman",
         "room_type": "Traditional Double",
         "bathroom_type": "Community",
         "ac": "No"
@@ -97,6 +102,7 @@ cmu_data = [
         "price": "6,075",
         "description": null,
         "building_name": "Donner House",
+        "grade": "Freshman",
         "room_type": "Traditional Single",
         "bathroom_type": "Community",
         "ac": "No"
@@ -114,6 +120,7 @@ cmu_data = [
         "price": "4,659",
         "description": null,
         "building_name": "Donner House",
+        "grade": "Freshman",
         "room_type": "Traditional Triple",
         "bathroom_type": "Community",
         "ac": "No"
@@ -131,6 +138,7 @@ cmu_data = [
         "price": "6,640",
         "description": null,
         "building_name": "Fairfax Apartments",
+        "grade": "Upperclassman",
         "room_type": "Apartment Double",
         "bathroom_type": "Shared",
         "ac": "Central"
@@ -148,6 +156,7 @@ cmu_data = [
         "price": "6,997",
         "description": null,
         "building_name": "Fairfax Apartments",
+        "grade": "Upperclassman",
         "room_type": "Apartment Single",
         "bathroom_type": "Shared",
         "ac": "Central"
@@ -165,6 +174,7 @@ cmu_data = [
         "price": "6,055",
         "description": null,
         "building_name": "Fairfax Apartments",
+        "grade": "Upperclassman",
         "room_type": "Studio Apartment Double",
         "bathroom_type": "Shared",
         "ac": "Central"
@@ -182,6 +192,7 @@ cmu_data = [
         "price": "5,741",
         "description": null,
         "building_name": "Fifth Clyde House",
+        "grade": "Upperclassman",
         "room_type": "Semi-Suite Double",
         "bathroom_type": "Shared",
         "ac": "Central"
@@ -199,6 +210,7 @@ cmu_data = [
         "price": "6,665",
         "description": null,
         "building_name": "Fifth Clyde House",
+        "grade": "Upperclassman",
         "room_type": "Semi-Suite Double",
         "bathroom_type": "Shared",
         "ac": "Central"
@@ -216,6 +228,7 @@ cmu_data = [
         "price": "6,092",
         "description": null,
         "building_name": "Fifth Clyde House",
+        "grade": "Upperclassman",
         "room_type": "Suite Double",
         "bathroom_type": "Shared",
         "ac": "Central"
@@ -233,6 +246,7 @@ cmu_data = [
         "price": "6,868",
         "description": null,
         "building_name": "Fifth Clyde House",
+        "grade": "Upperclassman",
         "room_type": "Suite Single",
         "bathroom_type": "Shared",
         "ac": "Central"
@@ -250,6 +264,7 @@ cmu_data = [
         "price": "6,640",
         "description": null,
         "building_name": "Fifth Neville",
+        "grade": "Upperclassman",
         "room_type": "Apartment Double",
         "bathroom_type": "Shared",
         "ac": "Window"
@@ -267,6 +282,7 @@ cmu_data = [
         "price": "6,997",
         "description": null,
         "building_name": "Fifth Neville",
+        "grade": "Upperclassman",
         "room_type": "Apartment Single",
         "bathroom_type": "Private",
         "ac": "Window"
@@ -284,43 +300,10 @@ cmu_data = [
         "price": "6,055",
         "description": null,
         "building_name": "Fifth Neville",
+        "grade": "Upperclassman",
         "room_type": "Studio Apartment",
         "bathroom_type": "Shared",
         "ac": "Window"
-    },
-    {
-        "address": {
-            "addr": "Forbes Ave at",
-            "city": " Beeler St",
-            "state": "",
-            "zipcode": "Pittsburgh"
-        },
-        "house_type": null,
-        "walk": null,
-        "drive": null,
-        "price": "6,640",
-        "description": null,
-        "building_name": "Forbes Beeler Apartments",
-        "room_type": "Apartment Double",
-        "bathroom_type": "Shared",
-        "ac": "Central"
-    },
-    {
-        "address": {
-            "addr": "Forbes Ave at",
-            "city": " Beeler St",
-            "state": "",
-            "zipcode": "Pittsburgh"
-        },
-        "house_type": null,
-        "walk": null,
-        "drive": null,
-        "price": "6,997",
-        "description": null,
-        "building_name": "Forbes Beeler Apartments",
-        "room_type": "Apartment Single",
-        "bathroom_type": "Shared",
-        "ac": "Central"
     },
     {
         "address": {
@@ -335,6 +318,7 @@ cmu_data = [
         "price": "5,200",
         "description": null,
         "building_name": "Greek Quad",
+        "grade": "Upperclassman",
         "room_type": "Greek Double",
         "bathroom_type": "Community",
         "ac": "Window"
@@ -352,6 +336,7 @@ cmu_data = [
         "price": "6,075",
         "description": null,
         "building_name": "Greek Quad",
+        "grade": "Upperclassman",
         "room_type": "Greek Single",
         "bathroom_type": "Community",
         "ac": "Window"
@@ -369,6 +354,7 @@ cmu_data = [
         "price": "5,517",
         "description": null,
         "building_name": "Greek Quad",
+        "grade": "Upperclassman",
         "room_type": "Greek Large Double",
         "bathroom_type": "Community",
         "ac": "Window"
@@ -386,6 +372,7 @@ cmu_data = [
         "price": "6,345",
         "description": null,
         "building_name": "Greek Quad",
+        "grade": "Upperclassman",
         "room_type": "Greek Large Single",
         "bathroom_type": "Community",
         "ac": "Window"
@@ -403,6 +390,7 @@ cmu_data = [
         "price": "5,741",
         "description": null,
         "building_name": "Henderson House",
+        "grade": "Freshman",
         "room_type": "Semi-Suite Double",
         "bathroom_type": "Shared",
         "ac": "Central"
@@ -420,6 +408,7 @@ cmu_data = [
         "price": "6,665",
         "description": null,
         "building_name": "Henderson House",
+        "grade": "Freshman",
         "room_type": "Semi-Suite Single",
         "bathroom_type": "Shared",
         "ac": "Central"
@@ -437,6 +426,7 @@ cmu_data = [
         "price": "6,640",
         "description": null,
         "building_name": "The Highlands Apartments",
+        "grade": "Upperclassman",
         "room_type": "Apartment Double",
         "bathroom_type": "Shared",
         "ac": "Window"
@@ -454,6 +444,7 @@ cmu_data = [
         "price": "6,997",
         "description": null,
         "building_name": "The Highlands Apartments",
+        "grade": "Upperclassman",
         "room_type": "Apartment Single",
         "bathroom_type": "Shared",
         "ac": "Window"
@@ -471,6 +462,7 @@ cmu_data = [
         "price": "6,640",
         "description": null,
         "building_name": "Margaret Morrison Apartments",
+        "grade": "Upperclassman",
         "room_type": "Apartment Double",
         "bathroom_type": "Shared",
         "ac": "No"
@@ -488,6 +480,7 @@ cmu_data = [
         "price": "6,345",
         "description": null,
         "building_name": "Margaret Morrison Greeks",
+        "grade": "Upperclassman",
         "room_type": "Greek Large Single",
         "bathroom_type": "Community",
         "ac": "No "
@@ -505,6 +498,7 @@ cmu_data = [
         "price": "5,200",
         "description": null,
         "building_name": "Margaret Morrison Greeks",
+        "grade": "Upperclassman",
         "room_type": "Greek Double",
         "bathroom_type": "Community",
         "ac": "No"
@@ -522,6 +516,7 @@ cmu_data = [
         "price": "5,741",
         "description": null,
         "building_name": "McGill House",
+        "grade": "Freshman",
         "room_type": "Semi-Suite Double",
         "bathroom_type": "Shared",
         "ac": "Window"
@@ -539,6 +534,7 @@ cmu_data = [
         "price": "6,665",
         "description": null,
         "building_name": "McGill House",
+        "grade": "Freshman",
         "room_type": "Semi-Suite Single",
         "bathroom_type": "Shared",
         "ac": "Window"
@@ -556,6 +552,7 @@ cmu_data = [
         "price": "5,200",
         "description": null,
         "building_name": "Morewood E-Tower",
+        "grade": "Freshman",
         "room_type": "Traditional Double",
         "bathroom_type": "Community",
         "ac": "No"
@@ -573,6 +570,7 @@ cmu_data = [
         "price": "6,075",
         "description": null,
         "building_name": "Morewood E-Tower",
+        "grade": "Freshman",
         "room_type": "Traditional Single",
         "bathroom_type": "Community",
         "ac": "No"
@@ -590,6 +588,7 @@ cmu_data = [
         "price": "5,200",
         "description": null,
         "building_name": "Morewood E-Tower",
+        "grade": "Freshman",
         "room_type": "Semi-Suite Triple",
         "bathroom_type": "Shared",
         "ac": "No"
@@ -607,6 +606,7 @@ cmu_data = [
         "price": "5,741",
         "description": null,
         "building_name": "Morewood Gardens",
+        "grade": "All",
         "room_type": "Semi-Suite Double",
         "bathroom_type": "Shared",
         "ac": "Central"
@@ -624,6 +624,7 @@ cmu_data = [
         "price": "6,665",
         "description": null,
         "building_name": "Morewood Gardens",
+        "grade": "All",
         "room_type": "Semi-Suite Single",
         "bathroom_type": "Shared",
         "ac": "Central"
@@ -641,6 +642,7 @@ cmu_data = [
         "price": "5,200",
         "description": null,
         "building_name": "Morewood Gardens",
+        "grade": "All",
         "room_type": "Semi-Suite Triple",
         "bathroom_type": "Shared",
         "ac": "Central"
@@ -658,6 +660,7 @@ cmu_data = [
         "price": "5,741",
         "description": null,
         "building_name": "Mudge House",
+        "grade": "Freshman",
         "room_type": "Semi-Suite Double",
         "bathroom_type": "Shared",
         "ac": "No "
@@ -675,6 +678,7 @@ cmu_data = [
         "price": "5,200",
         "description": null,
         "building_name": "Mudge House",
+        "grade": "Freshman",
         "room_type": "Semi-Suite Quad",
         "bathroom_type": "Shared",
         "ac": "No "
@@ -692,6 +696,7 @@ cmu_data = [
         "price": "6,665",
         "description": null,
         "building_name": "Mudge House",
+        "grade": "Freshman",
         "room_type": "Semi-Suite Single",
         "bathroom_type": "Shared",
         "ac": "No "
@@ -709,6 +714,7 @@ cmu_data = [
         "price": "5,200",
         "description": null,
         "building_name": "Mudge House",
+        "grade": "Freshman",
         "room_type": "Traditional Double",
         "bathroom_type": "Community",
         "ac": "No "
@@ -726,6 +732,7 @@ cmu_data = [
         "price": "6,075",
         "description": null,
         "building_name": "Mudge House",
+        "grade": "Freshman",
         "room_type": "Traditional Single",
         "bathroom_type": "Community",
         "ac": "No "
@@ -743,6 +750,7 @@ cmu_data = [
         "price": "4,659",
         "description": null,
         "building_name": "Mudge House",
+        "grade": "Freshman",
         "room_type": "Traditional Triple",
         "bathroom_type": "Community",
         "ac": "No "
@@ -760,6 +768,7 @@ cmu_data = [
         "price": "6,640",
         "description": null,
         "building_name": "Neville Apartments",
+        "grade": "Upperclassman",
         "room_type": "Apartment Double",
         "bathroom_type": "Shared",
         "ac": "Window"
@@ -777,6 +786,7 @@ cmu_data = [
         "price": "6,997",
         "description": null,
         "building_name": "Neville Apartments",
+        "grade": "Upperclassman",
         "room_type": "Apartment Single",
         "bathroom_type": "Shared",
         "ac": "Window"
@@ -794,6 +804,7 @@ cmu_data = [
         "price": "6,216",
         "description": null,
         "building_name": "Residence on Fifth",
+        "grade": "Freshman",
         "room_type": "Apartment Triple",
         "bathroom_type": "Shared",
         "ac": "Central"
@@ -811,6 +822,7 @@ cmu_data = [
         "price": "6,055",
         "description": null,
         "building_name": "Residence on Fifth",
+        "grade": "Freshman",
         "room_type": "Studio Apartment Double",
         "bathroom_type": "Shared",
         "ac": "Central"
@@ -828,6 +840,7 @@ cmu_data = [
         "price": "6,055",
         "description": null,
         "building_name": "Residence on Fifth",
+        "grade": "Freshman",
         "room_type": "Studio Apartment Triple",
         "bathroom_type": "Shared",
         "ac": "Central"
@@ -845,6 +858,7 @@ cmu_data = [
         "price": "5,741",
         "description": null,
         "building_name": "Resnik House",
+        "grade": "Upperclassman",
         "room_type": "Semi-Suite Double",
         "bathroom_type": "Shared",
         "ac": "Central"
@@ -862,6 +876,7 @@ cmu_data = [
         "price": "6,092",
         "description": null,
         "building_name": "Resnik House",
+        "grade": "Upperclassman",
         "room_type": "Suite Double",
         "bathroom_type": "Shared",
         "ac": "Central"
@@ -879,6 +894,7 @@ cmu_data = [
         "price": "6,868",
         "description": null,
         "building_name": "Resnik House",
+        "grade": "Upperclassman",
         "room_type": "Suite Single",
         "bathroom_type": "Shared",
         "ac": "Central"
@@ -896,6 +912,7 @@ cmu_data = [
         "price": "6,640",
         "description": null,
         "building_name": "Roselawn House",
+        "grade": "Upperclassman",
         "room_type": "Apartment Double",
         "bathroom_type": "Shared",
         "ac": "No"
@@ -913,6 +930,7 @@ cmu_data = [
         "price": "6,997",
         "description": null,
         "building_name": "Roselawn House",
+        "grade": "Upperclassman",
         "room_type": "Apartment Single",
         "bathroom_type": "Shared",
         "ac": "No"
@@ -930,6 +948,7 @@ cmu_data = [
         "price": "5,200",
         "description": null,
         "building_name": "Scobell House",
+        "grade": "Freshman",
         "room_type": "Traditional Double",
         "bathroom_type": "Community",
         "ac": "Window"
@@ -947,6 +966,7 @@ cmu_data = [
         "price": "6,075",
         "description": null,
         "building_name": "Scobell House",
+        "grade": "Freshman",
         "room_type": "Traditional Double",
         "bathroom_type": "Community",
         "ac": "Window"
@@ -964,6 +984,7 @@ cmu_data = [
         "price": "6,640",
         "description": null,
         "building_name": "Shirley Apartments ",
+        "grade": "Upperclassman",
         "room_type": "Apartment Double",
         "bathroom_type": "Shared",
         "ac": "Window"
@@ -981,6 +1002,7 @@ cmu_data = [
         "price": "7,486",
         "description": null,
         "building_name": "Shirley Apartments ",
+        "grade": "Upperclassman",
         "room_type": "Apartment Double as Single",
         "bathroom_type": "Shared",
         "ac": "Window"
@@ -998,6 +1020,7 @@ cmu_data = [
         "price": "7,251",
         "description": null,
         "building_name": "Shirley Apartments ",
+        "grade": "Upperclassman",
         "room_type": "Studio Apartment Single",
         "bathroom_type": "Private",
         "ac": "Window"
@@ -1015,6 +1038,7 @@ cmu_data = [
         "price": "5,741",
         "description": null,
         "building_name": "Spirit House",
+        "grade": "Upperclassman",
         "room_type": "Semi-Suite Double",
         "bathroom_type": "Shared",
         "ac": "No"
@@ -1032,6 +1056,7 @@ cmu_data = [
         "price": "6,665",
         "description": null,
         "building_name": "Spirit House",
+        "grade": "Upperclassman",
         "room_type": "Semi-Suite Single",
         "bathroom_type": "Shared",
         "ac": "No"
@@ -1049,6 +1074,7 @@ cmu_data = [
         "price": "5,200",
         "description": null,
         "building_name": "Spirit House",
+        "grade": "Upperclassman",
         "room_type": "Semi-Suite Triple",
         "bathroom_type": "Shared",
         "ac": "No"
@@ -1066,6 +1092,7 @@ cmu_data = [
         "price": "5,200",
         "description": null,
         "building_name": "Stever House",
+        "grade": "Freshman",
         "room_type": "Traditional Double",
         "bathroom_type": "Community",
         "ac": "Window"
@@ -1083,6 +1110,7 @@ cmu_data = [
         "price": "5,741",
         "description": null,
         "building_name": "Welch House",
+        "grade": "Freshman",
         "room_type": "Semi-Suite Double",
         "bathroom_type": "Shared",
         "ac": "No"
@@ -1100,6 +1128,7 @@ cmu_data = [
         "price": "6,665",
         "description": null,
         "building_name": "Welch House",
+        "grade": "Freshman",
         "room_type": "Semi-Suite Single",
         "bathroom_type": "Shared",
         "ac": "No"
@@ -1117,6 +1146,7 @@ cmu_data = [
         "price": "5,741",
         "description": null,
         "building_name": "West Wing",
+        "grade": "Upperclassman",
         "room_type": "Semi-Suite Double",
         "bathroom_type": "Shared",
         "ac": "Central"
@@ -1134,6 +1164,7 @@ cmu_data = [
         "price": "6,665",
         "description": null,
         "building_name": "West Wing",
+        "grade": "Upperclassman",
         "room_type": "Semi-Suite Single",
         "bathroom_type": "Shared",
         "ac": "Central"
@@ -1151,6 +1182,7 @@ cmu_data = [
         "price": "6,092",
         "description": null,
         "building_name": "West Wing",
+        "grade": "Upperclassman",
         "room_type": "Suite Double",
         "bathroom_type": "Shared",
         "ac": "Central"
@@ -1168,6 +1200,7 @@ cmu_data = [
         "price": "6,868",
         "description": null,
         "building_name": "West Wing",
+        "grade": "Upperclassman",
         "room_type": "Suite Single",
         "bathroom_type": "Shared",
         "ac": "Central"
@@ -1185,6 +1218,7 @@ cmu_data = [
         "price": "6,640",
         "description": null,
         "building_name": "Woodlawn Apartments",
+        "grade": "Upperclassman",
         "room_type": "Apartment Double",
         "bathroom_type": "Shared",
         "ac": "Window"
@@ -1202,6 +1236,7 @@ cmu_data = [
         "price": "6,997",
         "description": null,
         "building_name": "Woodlawn Apartments",
+        "grade": "Upperclassman",
         "room_type": "Apartment Single",
         "bathroom_type": "Shared",
         "ac": "Window"
